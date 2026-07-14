@@ -13,6 +13,10 @@ const contactSchema = new mongoose.Schema({
     },
     address: {
         type: String
-    }
+    },
+    profileImage: {
+        type: String,
+        default: ""
+    },
 });
 module.exports = mongoose.model("Contact", contactSchema);
